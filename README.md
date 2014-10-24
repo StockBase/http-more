@@ -29,11 +29,16 @@ This is where `http-more` comes in. It lets you pass through to the underlying H
 Currently, the backend is mikeal's `request` module, so you can pass, for example, `{rejectUnauthorized: false}` to avoid that `LEAF_SIGNATURE` error, or {jar: true} to enable a session cookie jar.
 
 
-## Installation
+## Installation (<0.9.x)
 
 1. `npm install -g meteorite` (if not already installed)
 2. `meteor remove http`
 3. `mrt add http-more`
+
+## Installation (>=0.9.x)
+
+1. `meteor remove http`
+2. `meteor add dandv:http-more`
 
 
 ## Contributing and tests
